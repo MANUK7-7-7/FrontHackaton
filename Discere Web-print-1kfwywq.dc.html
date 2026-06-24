@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style data-omelette-print-defaults>
+@media print {
+  @page { margin: 0.5in; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid; }
+  figure, table, pre, blockquote, img, svg, tr, [class~="card" i] { break-inside: avoid; }
+  img, svg { max-width: 100%; }
+  p { orphans: 3; widows: 3; }
+}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="./brand/icon-data.js"></script>
+<script src="./brand/icons.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  @keyframes disc-pulse { 0% { transform: scale(1); opacity: .5; } 70% { transform: scale(1.7); opacity: 0; } 100% { opacity: 0; } }
+  @keyframes disc-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+</style>
+</helmet>
+
+<div style="min-width:100%; min-height:100vh; width:max-content; box-sizing:border-box; padding:56px; background:#e7e5df; font-family:'Nunito',sans-serif;">
+  <div style="display:flex; flex-direction:column; gap:60px; align-items:flex-start;">
+
+    <!-- ============================================================ 01 INICIO (HUB) ============================================================ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; color:#6f6a5e;">01 · Inicio — alumno</div>
+      <div style="width:1280px; border-radius:16px; overflow:hidden; box-shadow:0 24px 60px -24px rgba(40,30,10,.45); background:#fff;">
+        <div style="height:42px; background:#efe7d4; border-bottom:1px solid #e2d7bf; display:flex; align-items:center; gap:14px; padding:0 16px;">
+          <div style="display:flex; gap:7px;"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></span><span style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></span><span style="width:12px;height:12px;border-radius:50%;background:#28c840;"></span></div>
+          <div style="width:340px; height:25px; background:#fff; border-radius:7px; display:flex; align-items:center; padding:0 12px; font-family:'Nunito'; font-weight:600; font-size:12px; color:#a39a83;">discere.app/inicio</div>
+        </div>
+        <div data-screen-label="Inicio" style="width:1280px; min-height:832px; background:#FBF3E2; display:flex;">
+
+          <!-- SIDEBAR (alumno) -->
+          <aside style="width:240px; flex:none; background:#2E4756; display:flex; flex-direction:column; padding:24px 18px;">
+            <div style="display:flex; align-items:center; gap:11px; padding:0 6px 26px;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#F5E0B7; display:flex; align-items:center; justify-content:center;"><discere-icon name="Group4" size="26" style="display:block;"></discere-icon></div>
+              <span style="font-family:'Fredoka'; font-weight:600; font-size:23px; color:#fff;">Discere</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; background:#00A6ED; color:#fff; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Inicio
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 4h10v4a5 5 0 0 1-10 0z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M7 5H4.5a2.5 2.5 0 0 0 3.5 4M17 5h2.5a2.5 2.5 0 0 1-3.5 4M9.5 14h5v3.5h-5zM8 20h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Liga
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="6" stroke="currentColor" stroke-width="2.2"/><path d="M8.5 14l-1 7 4.5-2.6 4.5 2.6-1-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Insignias
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2.2"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Perfil
+              </div>
+            </div>
+            <div style="flex:1;"></div>
+            <div style="display:flex; align-items:center; gap:11px; padding:12px; border-radius:16px; background:#26414f;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#33536420; border:2px dashed #5a7484; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:9px; color:#8fb0c0;">avatar</div>
+              <div><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#fff;">Lucía M.</div><div style="font-family:'Nunito'; font-weight:600; font-size:11px; color:#7f9aa8;">Estudiante</div></div>
+            </div>
+          </aside>
+
+          <!-- MAIN -->
+          <main style="flex:1; padding:30px 34px; display:flex; flex-direction:column; min-width:0;">
+            <div style="display:flex; align-items:flex-end; gap:16px;">
+              <div style="flex:1;">
+                <div style="font-family:'Fredoka'; font-weight:700; font-size:40px; color:#2E4756; line-height:1;">¡Hola, Lucía!</div>
+                <div style="font-family:'Nunito'; font-weight:600; font-size:15px; color:#8a8273; margin-top:8px;">Esto es lo que tenés para hoy.</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:7px; background:#fff; border-radius:999px; padding:9px 15px; box-shadow:0 2px 0 #e6dcc4;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF5E00"><path d="M12 2c2 3 1 5 0 6.2 1.1.2 2.2-.8 2.4-2.7 2.1 1.9 3.6 4.3 3.6 7.5a6 6 0 1 1-12 0c0-2.1 1-3.6 2.2-4.7-.1 1.4.6 2.4 1.6 2.6C12.4 8.5 11.4 5.4 12 2z"/></svg>
+                <span style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">7</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:7px; background:#fff; border-radius:999px; padding:9px 15px; box-shadow:0 2px 0 #e6dcc4;">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="#00A6ED"><path d="M12 2l2.9 6.1 6.6.7-5 4.5 1.4 6.5L12 17.1 6.1 20.3l1.4-6.5-5-4.5 6.6-.7z"/></svg>
+                <span style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">1 240</span>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:22px; margin-top:26px; align-items:flex-start;">
+
+              <!-- COL 1 · AVATAR / PERFIL -->
+              <div style="width:266px; flex:none; background:#fff; border-radius:22px; padding:20px; box-shadow:0 2px 0 #ece2cb;">
+                <div style="width:100%; height:190px; border-radius:16px; background:#f3eede; border:2px dashed #c8bfa6; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:13px; color:#a39a83;">avatar</div>
+                <div style="font-family:'Fredoka'; font-weight:600; font-size:21px; color:#2E4756; margin-top:15px;">Lucía M.</div>
+                <div style="display:flex; gap:7px; margin-top:8px;"><span style="background:#E3F4FD; color:#0077ad; font-family:'Fredoka'; font-weight:500; font-size:12px; padding:4px 11px; border-radius:999px;">Nivel 5</span><span style="background:#FFEBDF; color:#c44600; font-family:'Fredoka'; font-weight:500; font-size:12px; padding:4px 11px; border-radius:999px;">Liga Oro</span></div>
+                <div style="height:1px; background:#f0e7d2; margin:16px 0;"></div>
+                <div style="display:flex; flex-direction:column; gap:11px;">
+                  <div style="display:flex; align-items:center; justify-content:space-between;"><span style="display:flex; align-items:center; gap:8px; font-family:'Nunito'; font-weight:700; font-size:13px; color:#5a5purple;"><svg width="17" height="17" viewBox="0 0 24 24" fill="#FF5E00"><path d="M12 2c2 3 1 5 0 6.2 1.1.2 2.2-.8 2.4-2.7 2.1 1.9 3.6 4.3 3.6 7.5a6 6 0 1 1-12 0c0-2.1 1-3.6 2.2-4.7-.1 1.4.6 2.4 1.6 2.6C12.4 8.5 11.4 5.4 12 2z"/></svg><span style="color:#5a5346;">Racha</span></span><span style="font-family:'Fredoka'; font-weight:600; font-size:15px; color:#2E4756;">7 días</span></div>
+                  <div style="display:flex; align-items:center; justify-content:space-between;"><span style="display:flex; align-items:center; gap:8px; font-family:'Nunito'; font-weight:700; font-size:13px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="#00A6ED"><path d="M12 2l2.9 6.1 6.6.7-5 4.5 1.4 6.5L12 17.1 6.1 20.3l1.4-6.5-5-4.5 6.6-.7z"/></svg><span style="color:#5a5346;">XP total</span></span><span style="font-family:'Fredoka'; font-weight:600; font-size:15px; color:#2E4756;">1 240</span></div>
+                  <div style="display:flex; align-items:center; justify-content:space-between;"><span style="display:flex; align-items:center; gap:8px; font-family:'Nunito'; font-weight:700; font-size:13px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#3FB97A" stroke-width="2.4"/><circle cx="12" cy="12" r="1.6" fill="#3FB97A"/></svg><span style="color:#5a5346;">Precisión</span></span><span style="font-family:'Fredoka'; font-weight:600; font-size:15px; color:#2E4756;">88%</span></div>
+                </div>
+                <div style="height:1px; background:#f0e7d2; margin:16px 0;"></div>
+                <div style="font-family:'Nunito'; font-weight:800; font-size:11px; letter-spacing:.06em; color:#a39a83;">INSIGNIAS</div>
+                <div style="display:flex; gap:10px; margin-top:10px;">
+                  <div style="width:42px; height:42px; border-radius:12px; background:#FFEBDF; display:flex; align-items:center; justify-content:center;"><discere-icon name="Vector" size="24" style="display:block; color:#FF5E00;"></discere-icon></div>
+                  <div style="width:42px; height:42px; border-radius:12px; background:#E3F4FD; display:flex; align-items:center; justify-content:center;"><discere-icon name="Librito" size="24" style="display:block; color:#00A6ED;"></discere-icon></div>
+                  <div style="width:42px; height:42px; border-radius:12px; background:#eef0e9; display:flex; align-items:center; justify-content:center;"><discere-icon name="Gorrito" size="26" style="display:block; color:#2E4756;"></discere-icon></div>
+                  <div style="width:42px; height:42px; border-radius:12px; background:#f3eede; display:flex; align-items:center; justify-content:center; font-family:'Fredoka'; font-weight:600; font-size:13px; color:#a39a83;">+5</div>
+                </div>
+              </div>
+
+              <!-- COL 2 · TAREAS PENDIENTES -->
+              <div style="width:312px; flex:none; background:#fff; border-radius:22px; padding:20px; box-shadow:0 2px 0 #ece2cb;">
+                <div style="display:flex; align-items:center; gap:9px;"><span style="font-family:'Fredoka'; font-weight:600; font-size:19px; color:#2E4756;">Tareas pendientes</span><span style="background:#FF5E00; color:#fff; font-family:'Fredoka'; font-weight:600; font-size:12px; min-width:22px; height:22px; border-radius:999px; display:flex; align-items:center; justify-content:center; padding:0 6px;">4</span></div>
+                <div style="display:flex; flex-direction:column; gap:10px; margin-top:16px;">
+                  <div style="display:flex; align-items:center; gap:12px; padding:12px; border-radius:15px; border:1px solid #ece6d6;">
+                    <div style="width:42px; height:42px; border-radius:12px; background:#FF5E00; display:flex; align-items:center; justify-content:center; flex:none;"><discere-icon name="Group13" size="24" style="display:block; color:#fff;"></discere-icon></div>
+                    <div style="flex:1; min-width:0;"><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#2E4756;">Repaso: Fracciones</div><div style="display:inline-flex; align-items:center; gap:5px; margin-top:3px; background:#FFEBDF; border-radius:999px; padding:2px 8px;"><discere-icon name="Group4" size="12" style="display:block;"></discere-icon><span style="font-family:'Nunito'; font-weight:800; font-size:10px; color:#c44600;">Recomendado por IA</span></div></div>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:none;"><path d="M9 6l6 6-6 6" stroke="#c8bfa6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:12px; padding:12px; border-radius:15px; border:1px solid #ece6d6;">
+                    <div style="width:42px; height:42px; border-radius:12px; background:#00A6ED; display:flex; align-items:center; justify-content:center; flex:none;"><discere-icon name="Group13" size="24" style="display:block; color:#fff;"></discere-icon></div>
+                    <div style="flex:1; min-width:0;"><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#2E4756;">Despeje de ecuaciones</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#8a8273; margin-top:3px;">Lección · +20 XP</div></div>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:none;"><path d="M9 6l6 6-6 6" stroke="#c8bfa6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:12px; padding:12px; border-radius:15px; border:1px solid #ece6d6;">
+                    <div style="width:42px; height:42px; border-radius:12px; background:#2E4756; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 4h10v4a5 5 0 0 1-10 0z" stroke="#F5E0B7" stroke-width="2.1" stroke-linejoin="round"/><path d="M9.5 13h5v4h-5zM8 20h8" stroke="#F5E0B7" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <div style="flex:1; min-width:0;"><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#2E4756;">Desafío semanal</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#8a8273; margin-top:3px;">Vence el viernes · +50 XP</div></div>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:none;"><path d="M9 6l6 6-6 6" stroke="#c8bfa6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:12px; padding:12px; border-radius:15px; border:1px solid #ece6d6;">
+                    <div style="width:42px; height:42px; border-radius:12px; background:#00A6ED; display:flex; align-items:center; justify-content:center; flex:none;"><discere-icon name="Librito" size="24" style="display:block; color:#fff;"></discere-icon></div>
+                    <div style="flex:1; min-width:0;"><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#2E4756;">Lectura: Proporciones</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#8a8273; margin-top:3px;">Lección · +15 XP</div></div>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:none;"><path d="M9 6l6 6-6 6" stroke="#c8bfa6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COL 3 · CLASES -->
+              <div style="flex:1; min-width:0; background:#fff; border-radius:22px; padding:20px; box-shadow:0 2px 0 #ece2cb;">
+                <div style="font-family:'Fredoka'; font-weight:600; font-size:19px; color:#2E4756;">Tus clases</div>
+                <div style="display:flex; flex-direction:column; gap:14px; margin-top:16px;">
+                  <!-- clase activa -->
+                  <div style="border-radius:18px; background:#FBF3E2; border:1px solid #efe2c5; padding:16px;">
+                    <div style="display:flex; align-items:center; gap:13px;">
+                      <div style="width:50px; height:50px; border-radius:14px; background:#FF5E00; display:flex; align-items:center; justify-content:center; flex:none;"><discere-icon name="Group13" size="28" style="display:block; color:#fff;"></discere-icon></div>
+                      <div style="flex:1; min-width:0;"><div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">Matemática</div><div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#8a8273;">Prof. Díaz · 3°B · Unidad 2: Ecuaciones</div></div>
+                      <span style="background:#FFEBDF; color:#c44600; font-family:'Fredoka'; font-weight:500; font-size:11px; padding:4px 10px; border-radius:999px; flex:none;">En curso</span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px; margin-top:14px;">
+                      <div style="flex:1; height:10px; border-radius:9px; background:#fff; overflow:hidden;"><div style="width:48%; height:100%; border-radius:9px; background:#00A6ED;"></div></div>
+                      <span style="font-family:'Fredoka'; font-weight:600; font-size:13px; color:#2E4756;">48%</span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:14px; margin-top:16px;">
+                      <div style="display:flex; align-items:center; flex:1;">
+                        <div style="width:34px; height:34px; border-radius:50%; background:#00A6ED; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        <div style="height:3px; width:20px; background:#00A6ED;"></div>
+                        <div style="width:34px; height:34px; border-radius:50%; background:#00A6ED; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        <div style="height:3px; width:20px; background:#FF5E00;"></div>
+                        <div style="width:40px; height:40px; border-radius:50%; background:#FF5E00; display:flex; align-items:center; justify-content:center; flex:none; box-shadow:0 3px 0 #c44600;"><discere-icon name="Group13" size="20" style="display:block; color:#fff;"></discere-icon></div>
+                        <div style="height:3px; width:20px; background:#e6dcc4;"></div>
+                        <div style="width:34px; height:34px; border-radius:50%; background:#ece6d6; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 11V8a6 6 0 0 1 12 0v3" stroke="#b3ab95" stroke-width="2.6" stroke-linecap="round"/><rect x="4.5" y="11" width="15" height="9" rx="2.5" fill="#b3ab95"/></svg></div>
+                      </div>
+                      <div style="background:#FF5E00; border-radius:14px; padding:12px 26px; box-shadow:0 4px 0 #c44600; font-family:'Fredoka'; font-weight:600; font-size:15px; letter-spacing:.04em; color:#fff; flex:none;">Continuar</div>
+                    </div>
+                  </div>
+                  <!-- clase 2 -->
+                  <div style="border-radius:18px; border:1px solid #ece6d6; padding:16px; display:flex; align-items:center; gap:13px;">
+                    <div style="width:50px; height:50px; border-radius:14px; background:#00A6ED; display:flex; align-items:center; justify-content:center; flex:none;"><discere-icon name="Group10" size="30" style="display:block; color:#fff;"></discere-icon></div>
+                    <div style="flex:1; min-width:0;"><div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">Programación</div><div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#8a8273;">Prof. Soto · Unidad 1: Lógica</div><div style="display:flex; align-items:center; gap:8px; margin-top:8px;"><div style="flex:1; height:8px; border-radius:9px; background:#f0e7d2; overflow:hidden;"><div style="width:72%; height:100%; border-radius:9px; background:#00A6ED;"></div></div><span style="font-family:'Fredoka'; font-weight:600; font-size:12px; color:#2E4756;">72%</span></div></div>
+                    <div style="border:2px solid #ece6d6; border-radius:13px; padding:10px 20px; font-family:'Fredoka'; font-weight:600; font-size:14px; color:#2E4756; flex:none;">Continuar</div>
+                  </div>
+                  <!-- clase 3 -->
+                  <div style="border-radius:18px; border:1px solid #ece6d6; padding:16px; display:flex; align-items:center; gap:13px;">
+                    <div style="width:50px; height:50px; border-radius:14px; background:#3FB97A; display:flex; align-items:center; justify-content:center; flex:none;"><discere-icon name="Librito" size="28" style="display:block; color:#fff;"></discere-icon></div>
+                    <div style="flex:1; min-width:0;"><div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">Lengua</div><div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#8a8273;">Prof. Ferri · Unidad 3: Textos</div><div style="display:flex; align-items:center; gap:8px; margin-top:8px;"><div style="flex:1; height:8px; border-radius:9px; background:#f0e7d2; overflow:hidden;"><div style="width:90%; height:100%; border-radius:9px; background:#3FB97A;"></div></div><span style="font-family:'Fredoka'; font-weight:600; font-size:12px; color:#2E4756;">90%</span></div></div>
+                    <div style="border:2px solid #ece6d6; border-radius:13px; padding:10px 20px; font-family:'Fredoka'; font-weight:600; font-size:14px; color:#2E4756; flex:none;">Continuar</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ 02 SENDA ============================================================ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; color:#6f6a5e;">02 · Senda de la clase — alumno</div>
+      <div style="width:1280px; border-radius:16px; overflow:hidden; box-shadow:0 24px 60px -24px rgba(40,30,10,.45); background:#fff;">
+        <div style="height:42px; background:#efe7d4; border-bottom:1px solid #e2d7bf; display:flex; align-items:center; gap:14px; padding:0 16px;">
+          <div style="display:flex; gap:7px;"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></span><span style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></span><span style="width:12px;height:12px;border-radius:50%;background:#28c840;"></span></div>
+          <div style="width:340px; height:25px; background:#fff; border-radius:7px; display:flex; align-items:center; padding:0 12px; font-family:'Nunito'; font-weight:600; font-size:12px; color:#a39a83;">discere.app/aprender</div>
+        </div>
+        <div data-screen-label="Mapa de sendas" style="width:1280px; min-height:832px; background:#FBF3E2; display:flex;">
+
+          <!-- SIDEBAR (alumno) -->
+          <aside style="width:240px; flex:none; background:#2E4756; display:flex; flex-direction:column; padding:24px 18px;">
+            <div style="display:flex; align-items:center; gap:11px; padding:0 6px 26px;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#F5E0B7; display:flex; align-items:center; justify-content:center;"><discere-icon name="Group4" size="26" style="display:block;"></discere-icon></div>
+              <span style="font-family:'Fredoka'; font-weight:600; font-size:23px; color:#fff;">Discere</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; background:#00A6ED; color:#fff; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Aprender
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 4h10v4a5 5 0 0 1-10 0z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M7 5H4.5a2.5 2.5 0 0 0 3.5 4M17 5h2.5a2.5 2.5 0 0 1-3.5 4M9.5 14h5v3.5h-5zM8 20h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Liga
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="6" stroke="currentColor" stroke-width="2.2"/><path d="M8.5 14l-1 7 4.5-2.6 4.5 2.6-1-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Insignias
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2.2"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Perfil
+              </div>
+            </div>
+            <div style="flex:1;"></div>
+            <div style="display:flex; align-items:center; gap:11px; padding:12px; border-radius:16px; background:#26414f;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#33536420; border:2px dashed #5a7484; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:9px; color:#8fb0c0;">avatar</div>
+              <div><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#fff;">Lucía M.</div><div style="font-family:'Nunito'; font-weight:600; font-size:11px; color:#7f9aa8;">Estudiante</div></div>
+            </div>
+          </aside>
+
+          <!-- MAIN -->
+          <main style="flex:1; padding:30px 34px; display:flex; flex-direction:column; min-width:0;">
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div style="flex:1;">
+                <div style="font-family:'Fredoka'; font-weight:600; font-size:27px; color:#2E4756;">¡Hola, Lucía!</div>
+                <div style="font-family:'Nunito'; font-weight:600; font-size:14px; color:#8a8273; margin-top:2px;">Continuá tu senda · Unidad 2 · Ecuaciones lineales</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:7px; background:#fff; border-radius:999px; padding:9px 15px; box-shadow:0 2px 0 #e6dcc4;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF5E00"><path d="M12 2c2 3 1 5 0 6.2 1.1.2 2.2-.8 2.4-2.7 2.1 1.9 3.6 4.3 3.6 7.5a6 6 0 1 1-12 0c0-2.1 1-3.6 2.2-4.7-.1 1.4.6 2.4 1.6 2.6C12.4 8.5 11.4 5.4 12 2z"/></svg>
+                <span style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">7</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:7px; background:#fff; border-radius:999px; padding:9px 15px; box-shadow:0 2px 0 #e6dcc4;">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="#00A6ED"><path d="M12 2l2.9 6.1 6.6.7-5 4.5 1.4 6.5L12 17.1 6.1 20.3l1.4-6.5-5-4.5 6.6-.7z"/></svg>
+                <span style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">1 240</span>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:30px; margin-top:24px; flex:1;">
+              <!-- PATH -->
+              <div style="flex:1; position:relative; min-height:560px;">
+                <discere-icon name="Group10" size="120" style="display:block; position:absolute; left:8px; top:120px; opacity:.06; color:#2E4756; transform:rotate(-12deg);"></discere-icon>
+                <discere-icon name="Group13" size="120" style="display:block; position:absolute; right:30px; top:330px; opacity:.06; color:#2E4756; transform:rotate(10deg);"></discere-icon>
+                <discere-icon name="Gorrito" size="130" style="display:block; position:absolute; right:10px; top:20px; opacity:.06; color:#2E4756; transform:rotate(8deg);"></discere-icon>
+                <svg width="560" height="560" viewBox="0 0 560 560" fill="none" style="position:absolute; left:50%; top:0; transform:translateX(-50%);">
+                  <path d="M280 56 C200 96 180 110 180 160 C180 210 360 220 360 265 C360 312 175 322 175 370" stroke="#00A6ED" stroke-width="9" stroke-linecap="round"/>
+                  <path d="M175 370 C175 420 365 428 365 470" stroke="#2E4756" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 20" opacity="0.3"/>
+                </svg>
+                <div style="position:absolute; left:50%; top:0; width:560px; height:560px; transform:translateX(-50%);">
+                  <!-- n1 completed -->
+                  <div style="position:absolute; left:242px; top:18px; width:76px; height:76px;">
+                    <div style="width:76px; height:76px; border-radius:50%; background:#00A6ED; box-shadow:0 6px 0 #0077ad; display:flex; align-items:center; justify-content:center;"><discere-icon name="Vector" size="34" style="display:block; color:#fff;"></discere-icon></div>
+                    <div style="position:absolute; right:-4px; top:-4px; width:26px; height:26px; border-radius:50%; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.18); display:flex; align-items:center; justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#00A6ED" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  </div>
+                  <!-- n2 completed -->
+                  <div style="position:absolute; left:142px; top:122px; width:76px; height:76px;">
+                    <div style="width:76px; height:76px; border-radius:50%; background:#00A6ED; box-shadow:0 6px 0 #0077ad; display:flex; align-items:center; justify-content:center;"><discere-icon name="Librito" size="34" style="display:block; color:#fff;"></discere-icon></div>
+                    <div style="position:absolute; right:-4px; top:-4px; width:26px; height:26px; border-radius:50%; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.18); display:flex; align-items:center; justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#00A6ED" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  </div>
+                  <!-- n3 current -->
+                  <div style="position:absolute; left:314px; top:219px; width:92px; height:92px;">
+                    <div style="position:absolute; inset:0; border-radius:50%; background:#FF5E00; animation:disc-pulse 2.1s ease-out infinite;"></div>
+                    <div style="position:absolute; left:50%; top:-46px; transform:translateX(-50%); background:#fff; padding:7px 16px; border-radius:14px; box-shadow:0 4px 0 #e6dcc4; font-family:'Fredoka'; font-weight:600; font-size:13px; letter-spacing:.04em; color:#FF5E00; white-space:nowrap;">EMPEZAR<span style="position:absolute; left:50%; bottom:-7px; transform:translateX(-50%); width:0; height:0; border-left:7px solid transparent; border-right:7px solid transparent; border-top:8px solid #fff;"></span></div>
+                    <div style="position:relative; width:92px; height:92px; border-radius:50%; background:#FF5E00; box-shadow:0 7px 0 #c44600; display:flex; align-items:center; justify-content:center;"><discere-icon name="Group13" size="44" style="display:block; color:#fff;"></discere-icon></div>
+                  </div>
+                  <!-- n4 locked -->
+                  <div style="position:absolute; left:137px; top:332px; width:76px; height:76px;">
+                    <div style="width:76px; height:76px; border-radius:50%; background:#e6e0d0; box-shadow:0 6px 0 #cdc6b3; display:flex; align-items:center; justify-content:center;"><discere-icon name="Group10" size="36" style="display:block; color:#b3ab95;"></discere-icon></div>
+                  </div>
+                  <!-- n5 locked -->
+                  <div style="position:absolute; left:327px; top:432px; width:76px; height:76px;">
+                    <div style="width:76px; height:76px; border-radius:50%; background:#e6e0d0; box-shadow:0 6px 0 #cdc6b3; display:flex; align-items:center; justify-content:center;"><discere-icon name="Gorrito" size="40" style="display:block; color:#b3ab95;"></discere-icon></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT RAIL -->
+              <div style="width:300px; flex:none; display:flex; flex-direction:column; gap:16px;">
+                <div style="background:#fff; border-radius:20px; padding:18px; box-shadow:0 2px 0 #ece2cb;">
+                  <div style="font-family:'Fredoka'; font-weight:600; font-size:16px; color:#2E4756;">Meta diaria</div>
+                  <div style="display:flex; align-items:center; gap:14px; margin-top:12px;">
+                    <div style="width:64px; height:64px; border-radius:50%; background:conic-gradient(#FF5E00 75%, #f0e7d2 0); display:flex; align-items:center; justify-content:center;"><div style="width:48px;height:48px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fredoka';font-weight:600;font-size:15px;color:#FF5E00;">75%</div></div>
+                    <div><div style="font-family:'Fredoka'; font-weight:600; font-size:18px; color:#2E4756;">30 / 40 XP</div><div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#8a8273;">Te faltan 10 XP hoy</div></div>
+                  </div>
+                </div>
+                <div style="background:#2E4756; border-radius:20px; padding:18px;">
+                  <div style="display:flex; align-items:center; gap:11px;">
+                    <div style="width:44px; height:44px; border-radius:50%; background:#F5E0B7; flex:none; display:flex; align-items:center; justify-content:center; animation:disc-bob 3s ease-in-out infinite;"><discere-icon name="Group4" size="30" style="display:block;"></discere-icon></div>
+                    <div style="font-family:'Fredoka'; font-weight:600; font-size:15px; color:#8fd6f5;">Tu compañero IA</div>
+                  </div>
+                  <div style="font-family:'Nunito'; font-weight:600; font-size:13.5px; color:#dceaf1; line-height:1.4; margin-top:12px;">Detecté que las <b style="color:#fff;">fracciones</b> te cuestan. Calibré la senda de hoy para reforzarlas antes del próximo desafío.</div>
+                </div>
+                <div style="background:#fff; border-radius:20px; padding:18px; box-shadow:0 2px 0 #ece2cb;">
+                  <div style="display:flex; align-items:center; justify-content:space-between;"><span style="font-family:'Fredoka'; font-weight:600; font-size:16px; color:#2E4756;">Liga Oro</span><span style="font-family:'Nunito'; font-weight:800; font-size:12px; color:#FF5E00;">Puesto 3</span></div>
+                  <div style="display:flex; gap:5px; margin-top:12px;"><div style="flex:1;height:8px;border-radius:9px;background:#FF5E00;"></div><div style="flex:1;height:8px;border-radius:9px;background:#FF5E00;"></div><div style="flex:1;height:8px;border-radius:9px;background:#FF5E00;"></div><div style="flex:1;height:8px;border-radius:9px;background:#f0e7d2;"></div><div style="flex:1;height:8px;border-radius:9px;background:#f0e7d2;"></div></div>
+                  <div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#8a8273; margin-top:9px;">Ascendés a Platino con 40 XP más</div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ 02 LECCIÓN ============================================================ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; color:#6f6a5e;">02 · Lección · feedback de IA — alumno</div>
+      <div style="width:1280px; border-radius:16px; overflow:hidden; box-shadow:0 24px 60px -24px rgba(40,30,10,.45); background:#fff;">
+        <div style="height:42px; background:#efe7d4; border-bottom:1px solid #e2d7bf; display:flex; align-items:center; gap:14px; padding:0 16px;">
+          <div style="display:flex; gap:7px;"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></span><span style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></span><span style="width:12px;height:12px;border-radius:50%;background:#28c840;"></span></div>
+          <div style="width:340px; height:25px; background:#fff; border-radius:7px;"></div>
+        </div>
+        <div data-screen-label="Lección" style="width:1280px; min-height:832px; background:#fff; display:flex; flex-direction:column;">
+          <!-- top -->
+          <div style="display:flex; align-items:center; gap:24px; padding:24px 40px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#c2b89f" stroke-width="3" stroke-linecap="round"/></svg>
+            <div style="flex:1; max-width:680px; height:16px; border-radius:999px; background:#ece6d6; overflow:hidden;"><div style="width:62%; height:100%; border-radius:999px; background:#00A6ED;"></div></div>
+            <div style="display:flex; align-items:center; gap:6px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#E54B4B"><path d="M12 21s-7-4.4-9.4-8.3C.8 9.6 2.8 5.5 6.6 5.5c2.3 0 3.8 1.6 5.4 3.4 1.6-1.8 3.1-3.4 5.4-3.4 3.8 0 5.8 4.1 4 7.2C19 16.6 12 21 12 21z"/></svg><span style="font-family:'Fredoka'; font-weight:600; font-size:18px; color:#2E4756;">4</span></div>
+          </div>
+          <!-- center -->
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px 40px 40px;">
+            <div style="width:100%; max-width:680px;">
+              <div style="font-family:'Nunito'; font-weight:800; font-size:14px; letter-spacing:.12em; color:#00A6ED;">RESOLVÉ PARA X</div>
+              <div style="margin-top:18px; background:#F5E0B7; border-radius:24px; padding:48px 20px; text-align:center;"><div style="font-family:'Fredoka'; font-weight:600; font-size:60px; color:#2E4756; letter-spacing:-.01em;">2x + 6 = 14</div></div>
+              <div style="margin-top:22px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div style="position:relative; min-height:78px; border-radius:18px; border:2.5px solid #3FB97A; background:#EAF7F0; display:flex; align-items:center; justify-content:center; font-family:'Fredoka'; font-weight:600; font-size:28px; color:#2E4756;">x = 4<div style="position:absolute; right:12px; top:12px; width:24px; height:24px; border-radius:50%; background:#3FB97A; display:flex; align-items:center; justify-content:center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+                <div style="position:relative; min-height:78px; border-radius:18px; border:2.5px solid #E54B4B; background:#FCEBEA; display:flex; align-items:center; justify-content:center; font-family:'Fredoka'; font-weight:600; font-size:28px; color:#2E4756;">x = 7<div style="position:absolute; right:12px; top:12px; width:24px; height:24px; border-radius:50%; background:#E54B4B; display:flex; align-items:center; justify-content:center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg></div></div>
+                <div style="min-height:78px; border-radius:18px; border:2px solid #e8e2d4; background:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fredoka'; font-weight:600; font-size:28px; color:#b3ab95;">x = 10</div>
+                <div style="min-height:78px; border-radius:18px; border:2px solid #e8e2d4; background:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fredoka'; font-weight:600; font-size:28px; color:#b3ab95;">x = 3</div>
+              </div>
+            </div>
+          </div>
+          <!-- feedback bar -->
+          <div style="background:#FCEBEA; border-top:2px solid #f3d3cf; padding:22px 40px;">
+            <div style="max-width:1000px; margin:0 auto; display:flex; align-items:center; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:#fff; flex:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,.08);"><discere-icon name="Group4" size="32" style="display:block;"></discere-icon></div>
+              <div style="flex:1;">
+                <div style="font-family:'Fredoka'; font-weight:600; font-size:18px; color:#C23B3B;">Te trabaste al despejar</div>
+                <div style="font-family:'Nunito'; font-weight:600; font-size:14.5px; color:#5a4843; line-height:1.4; margin-top:3px;">Restaste el 6 de un solo lado. Lo que hacés de un lado, también va del otro: <b style="color:#2E4756;">14 − 6 = 8</b>, y luego <b style="color:#2E4756;">8 ÷ 2 = 4</b>. Tu próximo ejercicio se ajustó a este error.</div>
+              </div>
+              <div style="background:#E54B4B; border-radius:16px; padding:16px 38px; box-shadow:0 5px 0 #b83636; font-family:'Fredoka'; font-weight:600; font-size:17px; letter-spacing:.05em; color:#fff; white-space:nowrap;">ENTENDIDO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ 03 RECOMPENSA ============================================================ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; color:#6f6a5e;">03 · Recompensa · XP + racha — alumno</div>
+      <div style="width:1280px; border-radius:16px; overflow:hidden; box-shadow:0 24px 60px -24px rgba(40,30,10,.45); background:#fff;">
+        <div style="height:42px; background:#efe7d4; border-bottom:1px solid #e2d7bf; display:flex; align-items:center; gap:14px; padding:0 16px;">
+          <div style="display:flex; gap:7px;"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></span><span style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></span><span style="width:12px;height:12px;border-radius:50%;background:#28c840;"></span></div>
+          <div style="width:340px; height:25px; background:#fff; border-radius:7px;"></div>
+        </div>
+        <div data-screen-label="Recompensa" style="width:1280px; min-height:832px; background:#2E4756; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+          <div style="position:absolute; left:200px; top:120px; width:14px; height:14px; border-radius:3px; background:#00A6ED; transform:rotate(20deg);"></div>
+          <div style="position:absolute; left:430px; top:90px; width:10px; height:10px; border-radius:50%; background:#FF5E00;"></div>
+          <div style="position:absolute; left:900px; top:110px; width:14px; height:14px; border-radius:3px; background:#F5E0B7; transform:rotate(-15deg);"></div>
+          <div style="position:absolute; left:1040px; top:230px; width:9px; height:9px; border-radius:50%; background:#00A6ED;"></div>
+          <div style="position:absolute; left:240px; top:560px; width:12px; height:12px; border-radius:2px; background:#FF5E00; transform:rotate(30deg);"></div>
+          <div style="position:absolute; left:1010px; top:560px; width:11px; height:11px; border-radius:50%; background:#fff;"></div>
+          <div style="position:absolute; left:340px; top:680px; width:10px; height:10px; border-radius:50%; background:#F5E0B7;"></div>
+          <div style="position:absolute; left:980px; top:680px; width:13px; height:13px; border-radius:3px; background:#FF5E00; transform:rotate(15deg);"></div>
+
+          <div style="width:560px; background:#FBF3E2; border-radius:30px; padding:42px 40px; text-align:center; box-shadow:0 30px 70px -20px rgba(0,0,0,.5);">
+            <div style="width:108px; height:108px; border-radius:50%; background:#F5E0B7; margin:0 auto; display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 10px #fff7e8; animation:disc-bob 3s ease-in-out infinite;"><discere-icon name="Group4" size="74" style="display:block;"></discere-icon></div>
+            <div style="font-family:'Fredoka'; font-weight:700; font-size:32px; color:#2E4756; margin-top:20px;">¡Lección completada!</div>
+            <div style="font-family:'Nunito'; font-weight:700; font-size:14px; color:#8a8273; margin-top:5px;">Ecuaciones lineales · Unidad 2</div>
+            <div style="display:flex; gap:13px; margin-top:26px;">
+              <div style="flex:1; background:#00A6ED; border-radius:20px; padding:16px 8px; box-shadow:0 5px 0 #0077ad;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.1 6.6.7-5 4.5 1.4 6.5L12 17.1 6.1 20.3l1.4-6.5-5-4.5 6.6-.7z"/></svg><div style="font-family:'Fredoka'; font-weight:700; font-size:26px; color:#fff; line-height:1; margin-top:2px;">+30</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#d6f0fb; margin-top:3px;">XP ganada</div></div>
+              <div style="flex:1; background:#FF5E00; border-radius:20px; padding:16px 8px; box-shadow:0 5px 0 #c44600;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M12 2c2 3 1 5 0 6.2 1.1.2 2.2-.8 2.4-2.7 2.1 1.9 3.6 4.3 3.6 7.5a6 6 0 1 1-12 0c0-2.1 1-3.6 2.2-4.7-.1 1.4.6 2.4 1.6 2.6C12.4 8.5 11.4 5.4 12 2z"/></svg><div style="font-family:'Fredoka'; font-weight:700; font-size:26px; color:#fff; line-height:1; margin-top:2px;">8</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#ffe0cf; margin-top:3px;">Días de racha</div></div>
+              <div style="flex:1; background:#fff; border-radius:20px; padding:16px 8px; box-shadow:0 5px 0 #e6dcc4;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#2E4756" stroke-width="2.2"/><circle cx="12" cy="12" r="4.5" stroke="#2E4756" stroke-width="2.2"/><circle cx="12" cy="12" r="1.4" fill="#2E4756"/></svg><div style="font-family:'Fredoka'; font-weight:700; font-size:26px; color:#2E4756; line-height:1; margin-top:2px;">90%</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#7c7156; margin-top:3px;">Precisión</div></div>
+            </div>
+            <div style="margin-top:20px; background:#fff; border-radius:18px; padding:16px;">
+              <div style="display:flex; justify-content:space-between; font-family:'Fredoka'; font-weight:600; font-size:13px;"><span style="color:#2E4756;">Nivel 5</span><span style="color:#8a8273;">Nivel 6</span></div>
+              <div style="margin-top:8px; height:14px; border-radius:999px; background:#f0e7d2; overflow:hidden;"><div style="width:74%; height:100%; border-radius:999px; background:linear-gradient(90deg,#00A6ED,#5ec8f6);"></div></div>
+              <div style="margin-top:7px; font-family:'Nunito'; font-weight:700; font-size:12px; color:#8a8273;">740 / 1000 XP · faltan 260 para subir</div>
+            </div>
+            <div style="margin-top:22px; background:#FF5E00; border-radius:18px; padding:17px; box-shadow:0 6px 0 #c44600; font-family:'Fredoka'; font-weight:600; font-size:19px; letter-spacing:.05em; color:#fff;">CONTINUAR</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ 04 PANEL DOCENTE ============================================================ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; color:#6f6a5e;">04 · Panel docente — 30 alumnos · semáforo · alertas de IA</div>
+      <div style="width:1280px; border-radius:16px; overflow:hidden; box-shadow:0 24px 60px -24px rgba(40,30,10,.45); background:#fff;">
+        <div style="height:42px; background:#efe7d4; border-bottom:1px solid #e2d7bf; display:flex; align-items:center; gap:14px; padding:0 16px;">
+          <div style="display:flex; gap:7px;"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></span><span style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></span><span style="width:12px;height:12px;border-radius:50%;background:#28c840;"></span></div>
+          <div style="width:340px; height:25px; background:#fff; border-radius:7px;"></div>
+        </div>
+        <div data-screen-label="Panel docente" style="width:1280px; min-height:832px; background:#FBF3E2; display:flex;">
+          <!-- SIDEBAR docente -->
+          <aside style="width:240px; flex:none; background:#2E4756; display:flex; flex-direction:column; padding:24px 18px;">
+            <div style="display:flex; align-items:center; gap:11px; padding:0 6px 26px;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#F5E0B7; display:flex; align-items:center; justify-content:center;"><discere-icon name="Group4" size="26" style="display:block;"></discere-icon></div>
+              <span style="font-family:'Fredoka'; font-weight:600; font-size:23px; color:#fff;">Discere</span>
+            </div>
+            <div style="font-family:'Nunito'; font-weight:800; font-size:10px; letter-spacing:.12em; color:#6f8a98; padding:0 14px 8px;">DOCENTE</div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; background:#00A6ED; color:#fff; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/></svg> Panel</div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="2.1"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.8M17 13.5a5.5 5.5 0 0 1 3.5 5.1" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg> Alumnos</div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2 2 0 0 1 6 4h5v15H6a2 2 0 0 0-2 1.2zM20 5.5A2 2 0 0 0 18 4h-5v15h5a2 2 0 0 1 2 1.2z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg> Contenido</div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20V4M4 20h16M8 16v-5M12 16V7M16 16v-8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg> Informes</div>
+            </div>
+            <div style="flex:1;"></div>
+            <div style="display:flex; align-items:center; gap:11px; padding:12px; border-radius:16px; background:#26414f;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#33536420; border:2px dashed #5a7484; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:9px; color:#8fb0c0;">avatar</div>
+              <div><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#fff;">Prof. Díaz</div><div style="font-family:'Nunito'; font-weight:600; font-size:11px; color:#7f9aa8;">Matemática</div></div>
+            </div>
+          </aside>
+
+          <!-- MAIN docente -->
+          <main style="flex:1; padding:28px 32px; min-width:0;">
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div style="flex:1;">
+                <div style="font-family:'Fredoka'; font-weight:600; font-size:26px; color:#2E4756;">3°B · Matemática</div>
+                <div style="font-family:'Nunito'; font-weight:600; font-size:13px; color:#8a8273; margin-top:2px;">Unidad 2 · Ecuaciones lineales · semana del 23 de junio</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px; background:#fff; border-radius:12px; padding:9px 14px; box-shadow:0 2px 0 #e6dcc4; font-family:'Nunito'; font-weight:600; font-size:13px; color:#8a8273;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#b3ab95" stroke-width="2.2"/><path d="M20 20l-3.5-3.5" stroke="#b3ab95" stroke-width="2.2" stroke-linecap="round"/></svg> Buscar alumno</div>
+              <div style="width:40px; height:40px; border-radius:12px; background:#ece6d6; border:2px dashed #c2b89f; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:9px; color:#8a8273;">avatar</div>
+            </div>
+
+            <!-- KPI -->
+            <div style="display:flex; gap:16px; margin-top:22px;">
+              <div style="flex:1; background:#fff; border-radius:18px; padding:16px 18px; box-shadow:0 2px 0 #ece2cb;"><div style="font-family:'Nunito'; font-weight:700; font-size:12px; color:#8a8273;">Alumnos activos</div><div style="font-family:'Fredoka'; font-weight:700; font-size:30px; color:#2E4756; margin-top:4px;">28<span style="font-size:16px; color:#b3ab95;">/30</span></div></div>
+              <div style="flex:1; background:#fff; border-radius:18px; padding:16px 18px; box-shadow:0 2px 0 #ece2cb;"><div style="font-family:'Nunito'; font-weight:700; font-size:12px; color:#8a8273;">Progreso promedio</div><div style="font-family:'Fredoka'; font-weight:700; font-size:30px; color:#00A6ED; margin-top:4px;">{{ avgProg }}%</div></div>
+              <div style="flex:1; background:#fff; border-radius:18px; padding:16px 18px; box-shadow:0 2px 0 #ece2cb;"><div style="font-family:'Nunito'; font-weight:700; font-size:12px; color:#8a8273;">Necesitan ayuda</div><div style="font-family:'Fredoka'; font-weight:700; font-size:30px; color:#E54B4B; margin-top:4px;">{{ riskCount }}</div></div>
+              <div style="flex:1; background:#fff; border-radius:18px; padding:16px 18px; box-shadow:0 2px 0 #ece2cb;"><div style="font-family:'Nunito'; font-weight:700; font-size:12px; color:#8a8273;">Racha de la clase</div><div style="font-family:'Fredoka'; font-weight:700; font-size:30px; color:#FF5E00; margin-top:4px;">12 <span style="font-size:14px; color:#b3ab95;">días</span></div></div>
+            </div>
+
+            <!-- ALERTAS IA -->
+            <div style="margin-top:20px; background:#2E4756; border-radius:20px; padding:18px 20px;">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div style="width:34px; height:34px; border-radius:50%; background:#F5E0B7; display:flex; align-items:center; justify-content:center;"><discere-icon name="Group4" size="22" style="display:block;"></discere-icon></div>
+                <span style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#fff;">La IA detectó alumnos que necesitan ayuda</span>
+              </div>
+              <div style="display:flex; gap:14px; margin-top:14px;">
+                <sc-for list="{{ alerts }}" as="a" hint-placeholder-count="3">
+                  <div style="flex:1; background:#33505f; border-radius:16px; padding:14px; display:flex; align-items:center; gap:12px;">
+                    <div style="width:42px; height:42px; border-radius:11px; background:#3a5969; border:2px dashed #5a7484; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:8px; color:#8fb0c0; flex:none;">avatar</div>
+                    <div style="flex:1; min-width:0;"><div style="display:flex; align-items:center; gap:7px;"><span style="width:9px; height:9px; border-radius:50%; background: {{ a.dot }};"></span><span style="font-family:'Fredoka'; font-weight:500; font-size:15px; color:#fff;">{{ a.name }}</span></div><div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#aec3cd; margin-top:3px;">{{ a.reason }}</div></div>
+                    <div style="background:#FF5E00; border-radius:10px; padding:8px 14px; font-family:'Fredoka'; font-weight:500; font-size:13px; color:#fff; flex:none;">Ver</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+
+            <!-- ALUMNOS -->
+            <div style="margin-top:22px; display:flex; align-items:center; gap:14px;">
+              <span style="font-family:'Fredoka'; font-weight:600; font-size:18px; color:#2E4756;">Mis alumnos (30)</span>
+              <div style="flex:1;"></div>
+              <div style="display:flex; align-items:center; gap:16px; font-family:'Nunito'; font-weight:700; font-size:12px;">
+                <span style="display:flex; align-items:center; gap:6px; color:#2E4756;"><span style="width:11px; height:11px; border-radius:50%; background:#3FB97A;"></span>{{ okCount }} al día</span>
+                <span style="display:flex; align-items:center; gap:6px; color:#2E4756;"><span style="width:11px; height:11px; border-radius:50%; background:#F4B53F;"></span>{{ warnCount }} a observar</span>
+                <span style="display:flex; align-items:center; gap:6px; color:#2E4756;"><span style="width:11px; height:11px; border-radius:50%; background:#E54B4B;"></span>{{ riskCount }} en riesgo</span>
+              </div>
+            </div>
+
+            <div style="margin-top:14px; display:grid; grid-template-columns:repeat(6,1fr); gap:13px;">
+              <sc-for list="{{ students }}" as="s" hint-placeholder-count="30">
+                <div style="background:#fff; border:1px solid #ece6d6; border-radius:15px; padding:12px; position:relative;">
+                  <div style="position:absolute; right:11px; top:11px; width:11px; height:11px; border-radius:50%; background: {{ s.dot }};"></div>
+                  <div style="display:flex; align-items:center; gap:9px;">
+                    <div style="width:36px; height:36px; border-radius:10px; background:#f3eede; border:1.5px dashed #c8bfa6; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:7px; color:#a39a83; flex:none;">avatar</div>
+                    <div style="min-width:0;"><div style="font-family:'Fredoka'; font-weight:500; font-size:13px; color:#2E4756; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ s.name }}</div><div style="font-family:'Nunito'; font-weight:600; font-size:10px; color:#a39a83;">{{ s.unit }}</div></div>
+                  </div>
+                  <div style="margin-top:11px; height:7px; border-radius:9px; background:#f0e7d2; overflow:hidden;"><div style="height:100%; border-radius:9px; background:#00A6ED; width: {{ s.barWidth }};"></div></div>
+                  <div style="margin-top:6px; display:flex; justify-content:space-between; align-items:center;"><span style="font-family:'Nunito'; font-weight:700; font-size:10px; color:#a39a83;">Progreso</span><span style="font-family:'Fredoka'; font-weight:600; font-size:13px; color:#2E4756;">{{ s.prog }}%</span></div>
+                </div>
+              </sc-for>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ 05 DETALLE ALUMNO ============================================================ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; color:#6f6a5e;">05 · Detalle de alumno — recorrido · puntos de fricción</div>
+      <div style="width:1280px; border-radius:16px; overflow:hidden; box-shadow:0 24px 60px -24px rgba(40,30,10,.45); background:#fff;">
+        <div style="height:42px; background:#efe7d4; border-bottom:1px solid #e2d7bf; display:flex; align-items:center; gap:14px; padding:0 16px;">
+          <div style="display:flex; gap:7px;"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></span><span style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></span><span style="width:12px;height:12px;border-radius:50%;background:#28c840;"></span></div>
+          <div style="width:340px; height:25px; background:#fff; border-radius:7px;"></div>
+        </div>
+        <div data-screen-label="Detalle de alumno" style="width:1280px; min-height:832px; background:#FBF3E2; display:flex;">
+          <!-- SIDEBAR docente (Alumnos activo) -->
+          <aside style="width:240px; flex:none; background:#2E4756; display:flex; flex-direction:column; padding:24px 18px;">
+            <div style="display:flex; align-items:center; gap:11px; padding:0 6px 26px;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#F5E0B7; display:flex; align-items:center; justify-content:center;"><discere-icon name="Group4" size="26" style="display:block;"></discere-icon></div>
+              <span style="font-family:'Fredoka'; font-weight:600; font-size:23px; color:#fff;">Discere</span>
+            </div>
+            <div style="font-family:'Nunito'; font-weight:800; font-size:10px; letter-spacing:.12em; color:#6f8a98; padding:0 14px 8px;">DOCENTE</div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2.1"/></svg> Panel</div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; background:#00A6ED; color:#fff; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="2.1"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.8M17 13.5a5.5 5.5 0 0 1 3.5 5.1" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg> Alumnos</div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2 2 0 0 1 6 4h5v15H6a2 2 0 0 0-2 1.2zM20 5.5A2 2 0 0 0 18 4h-5v15h5a2 2 0 0 1 2 1.2z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg> Contenido</div>
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:#9fb6c2; font-family:'Fredoka'; font-weight:500; font-size:15px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20V4M4 20h16M8 16v-5M12 16V7M16 16v-8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg> Informes</div>
+            </div>
+            <div style="flex:1;"></div>
+            <div style="display:flex; align-items:center; gap:11px; padding:12px; border-radius:16px; background:#26414f;">
+              <div style="width:40px; height:40px; border-radius:12px; background:#33536420; border:2px dashed #5a7484; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:9px; color:#8fb0c0;">avatar</div>
+              <div><div style="font-family:'Fredoka'; font-weight:500; font-size:14px; color:#fff;">Prof. Díaz</div><div style="font-family:'Nunito'; font-weight:600; font-size:11px; color:#7f9aa8;">Matemática</div></div>
+            </div>
+          </aside>
+
+          <!-- MAIN detalle -->
+          <main style="flex:1; padding:28px 32px; min-width:0;">
+            <div style="font-family:'Nunito'; font-weight:700; font-size:13px; color:#a39a83;">Alumnos / <span style="color:#2E4756;">Mateo G.</span></div>
+
+            <!-- header alumno -->
+            <div style="margin-top:14px; background:#fff; border-radius:22px; padding:22px 24px; box-shadow:0 2px 0 #ece2cb; display:flex; align-items:center; gap:22px;">
+              <div style="width:72px; height:72px; border-radius:18px; background:#f3eede; border:2px dashed #c8bfa6; display:flex; align-items:center; justify-content:center; font-family:'Nunito'; font-weight:700; font-size:11px; color:#a39a83; flex:none;">avatar</div>
+              <div style="flex:1;">
+                <div style="display:flex; align-items:center; gap:10px;"><span style="font-family:'Fredoka'; font-weight:600; font-size:24px; color:#2E4756;">Mateo G.</span><span style="background:#E3F4FD; color:#0077ad; font-family:'Fredoka'; font-weight:500; font-size:12px; padding:4px 10px; border-radius:999px;">Nivel 5</span><span style="background:#FFEBDF; color:#c44600; font-family:'Fredoka'; font-weight:500; font-size:12px; padding:4px 10px; border-radius:999px;">Liga Oro</span></div>
+                <div style="font-family:'Nunito'; font-weight:600; font-size:13px; color:#8a8273; margin-top:5px;">Activo hace 12 min · 3°B Matemática</div>
+              </div>
+              <div style="display:flex; gap:26px; text-align:center;">
+                <div><div style="font-family:'Fredoka'; font-weight:700; font-size:24px; color:#FF5E00;">8</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#8a8273;">Racha</div></div>
+                <div><div style="font-family:'Fredoka'; font-weight:700; font-size:24px; color:#00A6ED;">1 240</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#8a8273;">XP</div></div>
+                <div><div style="font-family:'Fredoka'; font-weight:700; font-size:24px; color:#E54B4B;">78%</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#8a8273;">Precisión</div></div>
+                <div><div style="font-family:'Fredoka'; font-weight:700; font-size:24px; color:#2E4756;">48%</div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#8a8273;">Unidad 2</div></div>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:22px; margin-top:22px; align-items:flex-start;">
+              <!-- LEFT -->
+              <div style="flex:1; min-width:0; display:flex; flex-direction:column; gap:22px;">
+                <div style="background:#fff; border-radius:20px; padding:20px 22px; box-shadow:0 2px 0 #ece2cb;">
+                  <div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756;">Recorrido de aprendizaje</div>
+                  <div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#8a8273; margin-top:2px;">Unidad 2 · Ecuaciones lineales</div>
+                  <div style="display:flex; align-items:flex-start; gap:0; margin-top:22px;">
+                    <div style="display:flex; flex-direction:column; align-items:center; flex:1;"><div style="width:48px; height:48px; border-radius:50%; background:#00A6ED; display:flex; align-items:center; justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#2E4756; margin-top:7px; text-align:center;">Sumas</div></div>
+                    <div style="height:3px; background:#00A6ED; flex:none; width:36px; margin-top:23px;"></div>
+                    <div style="display:flex; flex-direction:column; align-items:center; flex:1;"><div style="width:48px; height:48px; border-radius:50%; background:#00A6ED; display:flex; align-items:center; justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#2E4756; margin-top:7px; text-align:center;">Términos</div></div>
+                    <div style="height:3px; background:#E54B4B; flex:none; width:36px; margin-top:23px;"></div>
+                    <div style="display:flex; flex-direction:column; align-items:center; flex:1; position:relative;"><div style="width:48px; height:48px; border-radius:50%; background:#FCEBEA; border:2.5px solid #E54B4B; display:flex; align-items:center; justify-content:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v5M12 16.5v.5" stroke="#E54B4B" stroke-width="2.6" stroke-linecap="round"/><path d="M10.3 4.3 2.6 18a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 4.3a2 2 0 0 0-3.4 0Z" stroke="#E54B4B" stroke-width="2"/></svg></div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#E54B4B; margin-top:7px; text-align:center;">Despeje</div></div>
+                    <div style="height:3px; background:#e6dcc4; flex:none; width:36px; margin-top:23px;"></div>
+                    <div style="display:flex; flex-direction:column; align-items:center; flex:1;"><div style="width:48px; height:48px; border-radius:50%; background:#f0e7d2; display:flex; align-items:center; justify-content:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 11V8a6 6 0 0 1 12 0v3" stroke="#b3ab95" stroke-width="2.4" stroke-linecap="round"/><rect x="4.5" y="11" width="15" height="9" rx="2.5" fill="#b3ab95"/></svg></div><div style="font-family:'Nunito'; font-weight:700; font-size:11px; color:#a39a83; margin-top:7px; text-align:center;">Sistemas</div></div>
+                  </div>
+                </div>
+
+                <div style="background:#fff; border-radius:20px; padding:20px 22px; box-shadow:0 2px 0 #ece2cb;">
+                  <div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#2E4756; margin-bottom:6px;">Actividad reciente</div>
+                  <sc-for list="{{ activity }}" as="ev" hint-placeholder-count="4">
+                    <div style="display:flex; gap:13px; padding:11px 0; border-bottom:1px solid #f3eede;">
+                      <div style="width:11px; height:11px; border-radius:50%; background: {{ ev.col }}; margin-top:4px; flex:none;"></div>
+                      <div style="flex:1;"><div style="font-family:'Nunito'; font-weight:700; font-size:13.5px; color:#2E4756;">{{ ev.txt }}</div></div>
+                      <div style="font-family:'Nunito'; font-weight:600; font-size:11px; color:#a39a83; white-space:nowrap;">{{ ev.t }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <!-- RIGHT -->
+              <div style="width:360px; flex:none; display:flex; flex-direction:column; gap:22px;">
+                <div style="background:#fff; border-radius:20px; padding:20px; box-shadow:0 2px 0 #ece2cb;">
+                  <div style="display:flex; align-items:center; gap:8px;"><discere-icon name="Group13" size="18" style="display:block; color:#E54B4B;"></discere-icon><span style="font-family:'Fredoka'; font-weight:600; font-size:16px; color:#2E4756;">Puntos de fricción (IA)</span></div>
+                  <div style="display:flex; flex-direction:column; gap:11px; margin-top:14px;">
+                    <sc-for list="{{ friction }}" as="f" hint-placeholder-count="3">
+                      <div style="border-radius:14px; padding:13px 14px; background: {{ f.bg }};">
+                        <div style="display:flex; align-items:center; justify-content:space-between;"><span style="font-family:'Fredoka'; font-weight:600; font-size:14px; color:#2E4756;">{{ f.skill }}</span><span style="font-family:'Nunito'; font-weight:800; font-size:10px; color: {{ f.col }};">{{ f.errors }}</span></div>
+                        <div style="font-family:'Nunito'; font-weight:600; font-size:12px; color:#6f6a5e; line-height:1.35; margin-top:4px;">{{ f.detail }}</div>
+                        <div style="font-family:'Nunito'; font-weight:800; font-size:10px; letter-spacing:.05em; color: {{ f.col }}; margin-top:6px;">{{ f.sev }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </div>
+
+                <div style="background:#2E4756; border-radius:20px; padding:18px;">
+                  <div style="display:flex; align-items:center; gap:10px;"><div style="width:38px; height:38px; border-radius:50%; background:#F5E0B7; display:flex; align-items:center; justify-content:center; flex:none;"><discere-icon name="Group4" size="26" style="display:block;"></discere-icon></div><span style="font-family:'Fredoka'; font-weight:600; font-size:15px; color:#8fd6f5;">Recomendación de la IA</span></div>
+                  <div style="font-family:'Nunito'; font-weight:600; font-size:13.5px; color:#dceaf1; line-height:1.45; margin-top:12px;">Asigná a Mateo <b style="color:#fff;">2 micro-ejercicios de despeje guiado</b> antes de avanzar. Suele resolver el lado izquierdo y olvidar replicarlo en el derecho.</div>
+                  <div style="margin-top:14px; background:#FF5E00; border-radius:14px; padding:13px; text-align:center; font-family:'Fredoka'; font-weight:600; font-size:14px; letter-spacing:.04em; color:#fff;">Asignar refuerzo</div>
+                </div>
+
+                <div style="background:#fff; border-radius:20px; padding:20px; box-shadow:0 2px 0 #ece2cb;">
+                  <div style="font-family:'Fredoka'; font-weight:600; font-size:16px; color:#2E4756; margin-bottom:12px;">Dominio por habilidad</div>
+                  <sc-for list="{{ skills }}" as="sk" hint-placeholder-count="5">
+                    <div style="margin-bottom:13px;">
+                      <div style="display:flex; justify-content:space-between; margin-bottom:5px;"><span style="font-family:'Nunito'; font-weight:700; font-size:12.5px; color:#2E4756;">{{ sk.name }}</span><span style="font-family:'Fredoka'; font-weight:600; font-size:12px; color: {{ sk.col }};">{{ sk.label }}</span></div>
+                      <div style="height:8px; border-radius:9px; background:#f0e7d2; overflow:hidden;"><div style="height:100%; border-radius:9px; background: {{ sk.col }}; width: {{ sk.pct }};"></div></div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1380,&quot;height&quot;:1000}}">
+class Component extends DCLogic {
+  renderVals() {
+    const fn = ['Mateo','Sofía','Benjamín','Valentina','Joaquín','Catalina','Thiago','Martina','Lucas','Emma','Bautista','Isabella','Santiago','Julieta','Bruno','Renata','Lautaro','Mía','Tomás','Olivia','Gael','Delfina','Ignacio','Abril','Felipe','Victoria','Dante','Jazmín','Nicolás','Camila'];
+    const ln = ['G.','R.','M.','P.','S.','L.','F.','D.','C.','A.','V.','T.','B.','N.','H.','Q.','Z.','O.','I.','E.'];
+    const units = ['Fracciones','Ecuaciones','Geometría','Decimales','Proporciones'];
+    const students = fn.map((name, i) => {
+      const prog = ((i * 29 + 23) % 94) + 5;
+      const status = prog < 42 ? 'risk' : (prog < 68 ? 'warn' : 'ok');
+      const dot = status === 'risk' ? '#E54B4B' : (status === 'warn' ? '#F4B53F' : '#3FB97A');
+      return {
+        name: name + ' ' + ln[i % ln.length],
+        prog: prog,
+        barWidth: prog + '%',
+        dot: dot,
+        status: status,
+        unit: units[i % units.length]
+      };
+    });
+    const okCount = students.filter(s => s.status === 'ok').length;
+    const warnCount = students.filter(s => s.status === 'warn').length;
+    const riskCount = students.filter(s => s.status === 'risk').length;
+    const avgProg = Math.round(students.reduce((a, s) => a + s.prog, 0) / students.length);
+    const alerts = students.filter(s => s.status === 'risk').slice(0, 3).map(s => ({
+      name: s.name,
+      dot: s.dot,
+      reason: 'Se trabó en ' + s.unit + ' · ' + ((s.prog % 3) + 2) + ' intentos fallidos'
+    }));
+    const friction = [
+      { skill: 'Despeje de ecuaciones', detail: 'Resta el término de un solo lado de la igualdad', errors: '3 errores', sev: 'Fricción alta', col: '#E54B4B', bg: '#FCEBEA' },
+      { skill: 'Fracciones equivalentes', detail: 'Confunde numerador y denominador al simplificar', errors: '2 errores', sev: 'Fricción media', col: '#F4B53F', bg: '#FEF6E6' },
+      { skill: 'Propiedad distributiva', detail: 'Olvida multiplicar el segundo término', errors: '1 error', sev: 'Fricción baja', col: '#00A6ED', bg: '#E3F4FD' }
+    ];
+    const skills = [
+      { name: 'Suma y resta', pct: '100%', label: '100%', col: '#3FB97A' },
+      { name: 'Multiplicación y división', pct: '92%', label: '92%', col: '#3FB97A' },
+      { name: 'Ecuaciones lineales', pct: '48%', label: '48%', col: '#F4B53F' },
+      { name: 'Fracciones', pct: '35%', label: '35%', col: '#E54B4B' },
+      { name: 'Geometría básica', pct: '6%', label: '6%', col: '#E54B4B' }
+    ];
+    const activity = [
+      { t: 'Hoy · 10:24', txt: 'Completó "Ecuaciones · Nivel 2" con 90% de precisión', col: '#3FB97A' },
+      { t: 'Hoy · 10:12', txt: 'Se trabó 3 veces en el despeje de ecuaciones', col: '#E54B4B' },
+      { t: 'Ayer · 18:40', txt: 'Mantuvo su racha de 8 días seguidos', col: '#FF5E00' },
+      { t: 'Ayer · 18:05', txt: 'Subió a la Liga Oro', col: '#00A6ED' }
+    ];
+    return { students, okCount, warnCount, riskCount, avgProg, alerts, friction, skills, activity };
+  }
+}
+</script>
+<script>
+(async () => {
+  if (!document.title || !document.title.trim()) document.title = "Discere Web";
+  // Prepend so page-supplied @page / break rules (deck-stage's margin:0,
+  // author CSS) keep source-order precedence over the baseline.
+  const baseCss = document.createElement('style');
+  baseCss.textContent = "@media print {\n  figure, table { break-inside: avoid; }\n  *, *::before, *::after {\n    print-color-adjust: exact; -webkit-print-color-adjust: exact;\n    backdrop-filter: none !important; -webkit-backdrop-filter: none !important;\n    animation-delay: -99s !important; animation-duration: .001s !important;\n    animation-iteration-count: 1 !important; animation-fill-mode: both !important;\n    animation-play-state: running !important; transition-duration: 0s !important;\n  }\n}";
+  document.head.prepend(baseCss);
+  if (document.readyState === 'loading') {
+    await new Promise((r) => document.addEventListener('DOMContentLoaded', r, { once: true }));
+  }
+  let ds = document.querySelector('deck-stage');
+  // whenDefined never resolves when nothing registers the element, so only
+  // await it when a <deck-stage> tag exists (and race a timeout regardless).
+  if (ds && !customElements.get('deck-stage')) {
+    try {
+      await Promise.race([
+        customElements.whenDefined('deck-stage'),
+        new Promise((r) => setTimeout(r, 3000)),
+      ]);
+    } catch (e) {}
+    ds = document.querySelector('deck-stage');
+  }
+  // dc-runtime assigns window.DCLogic at init and mounts into #dc-root on
+  // DOMContentLoaded; settle on that subtree so React has rendered before
+  // print(). Non-DC pages fall through to weighing body.
+  const isDc = !ds && 'DCLogic' in window;
+  const settleRoot = ds || (isDc ? document.getElementById('dc-root') : null) || document.body;
+  if (settleRoot) {
+    // Weigh only content children — skip script/style/template so inline
+    // Babel/CSS doesn't register as stable "content" before the framework
+    // has mounted anything.
+    const MEDIA = 'img,svg,canvas,video,picture,iframe,embed,object';
+    const weigh = () => {
+      let text = 0, media = 0;
+      for (const c of settleRoot.children) {
+        const t = c.tagName;
+        if (t === 'SCRIPT' || t === 'STYLE' || t === 'TEMPLATE') continue;
+        text += (c.textContent || '').trim().length;
+        media += c.querySelectorAll(MEDIA).length + (c.matches(MEDIA) ? 1 : 0);
+      }
+      return text + media * 100;
+    };
+    // "Non-zero and stable" alone is not sufficient to mean rendered: generic
+    // body can carry a static shell while async main content is pending, and
+    // #dc-root can carry the root DC's static text while child refs are still
+    // .sc-placeholder boxes. Gate generic on readyState 'complete', and never
+    // accept stability while a dc-runtime placeholder is present.
+    const isGeneric = settleRoot === document.body;
+    const deadline = Date.now() + 15000;
+    let last = -1, stable = 0;
+    while (Date.now() < deadline) {
+      const n = weigh();
+      const ready =
+        (!isGeneric || document.readyState === 'complete') &&
+        !settleRoot.querySelector('.sc-placeholder');
+      if (n > 0 && n === last && ready) { if (++stable >= 2) break; } else { stable = 0; }
+      last = n;
+      await new Promise((r) => setTimeout(r, 250));
+    }
+  }
+  // Reveal content gated on scroll or visibility before printing. Lazy <img>,
+  // IntersectionObserver fade-ins, and collapsed <details> don't render while
+  // off-screen, so a long page would print with them blank or closed. Open
+  // every <details>, force native-lazy images eager, and scroll the document
+  // through its full height to trip lazy-load + IO; then wait (bounded) for the
+  // newly-triggered images. Inert for deck-stage (slides aren't scroll-gated).
+  try {
+    for (const d of document.querySelectorAll('details')) d.open = true;
+    for (const img of document.querySelectorAll('img[loading="lazy"]'))
+      img.loading = 'eager';
+    const scroller = document.scrollingElement || document.documentElement;
+    const full = Math.max(scroller.scrollHeight, document.body.scrollHeight);
+    const step = window.innerHeight || 800;
+    for (let y = 0; y <= full; y += step) {
+      window.scrollTo(0, y);
+      await new Promise((r) => requestAnimationFrame(r));
+    }
+    window.scrollTo(0, 0);
+    await Promise.race([
+      Promise.all(
+        [...document.images].map((img) =>
+          img.complete
+            ? null
+            : new Promise((res) => {
+                img.addEventListener('load', res, { once: true });
+                img.addEventListener('error', res, { once: true });
+              })
+        )
+      ),
+      new Promise((r) => setTimeout(r, 4000)),
+    ]);
+  } catch (e) {}
+  try { await document.fonts.ready; } catch (e) {}
+  // Jump every animation to its end state so print() never captures a slide
+  // mid-entrance. Ordering matters: the 0s-transition style must be live
+  // BEFORE data-deck-active is set so attribute-keyed transitions don't
+  // start a (now-0s) run from the pre-active base.
+  const st = document.createElement('style');
+  st.textContent = '*,*::before,*::after{animation-delay:-99s !important;animation-duration:.001s !important;animation-iteration-count:1 !important;animation-fill-mode:both !important;animation-play-state:running !important;transition-duration:0s !important}';
+  document.head.appendChild(st);
+  for (const d of document.querySelectorAll('deck-stage')) {
+    for (const c of d.children) {
+      const t = c.tagName;
+      if (t === 'SCRIPT' || t === 'STYLE' || t === 'TEMPLATE') continue;
+      c.setAttribute('data-deck-active', '');
+    }
+  }
+  // Re-append deck-stage's @page last so no author @page can add a margin and
+  // spill each full-bleed slide onto two sheets. Backstop for old copies.
+  if (ds) {
+    let pg = document.getElementById('deck-stage-print-page');
+    if (!pg) {
+      pg = document.createElement('style');
+      pg.textContent = '@page{size:' + (+ds.getAttribute('width') || 1920) +
+        'px ' + (+ds.getAttribute('height') || 1080) + 'px;margin:0}';
+    }
+    document.body.appendChild(pg);
+  }
+  try {
+    const sweep = () => {
+      for (const a of document.getAnimations()) {
+        try { a.finish(); } catch (e) {
+          try { a.currentTime = (a.effect && a.effect.getComputedTiming().duration) || 0; a.pause(); } catch (e2) {}
+        }
+      }
+    };
+    sweep();
+    await new Promise((r) => requestAnimationFrame(r));
+    sweep();
+    await new Promise((r) => requestAnimationFrame(r));
+  } catch (e) {}
+  // Relax break-inside on oversized elements. An element taller than a
+  // printable page can't honor break-inside: avoid — browsers either overflow
+  // it or push it whole to the next page, leaving a blank gap, then break it
+  // anyway at an arbitrary point. After the final layout (content revealed,
+  // animations jumped), find elements taller than a page that still compute
+  // break-inside: avoid and reset them to auto, so the browser breaks them at
+  // their children's boundaries instead (children keep their own avoid). PAGE_PX
+  // is a conservative portrait estimate at 96 CSS px/in — Letter/A4 usable
+  // height minus our 0.5in margins — so only clearly-oversized elements are
+  // touched and under-page elements still stay whole. Skipped for decks, whose
+  // slides are sized to the page.
+  try {
+    if (!document.querySelector('deck-stage')) {
+      const PAGE_PX = 1024;
+      // Our print defaults add a real @page margin only when the source has
+      // no @page of its own; computed style can't tell us (it reports screen
+      // media), so read the injected rule directly.
+      const defaults = document.querySelector('style[data-omelette-print-defaults]');
+      const pageInset = /@page\s*\{[^}]*margin/.test(defaults ? defaults.textContent || '' : '');
+      const SEL = 'section,article,figure,table,pre,blockquote,[class~="card" i],[class~="page" i],[class~="sheet" i]';
+      for (const el of document.body.querySelectorAll(SEL)) {
+        if (el instanceof HTMLElement && el.offsetHeight > PAGE_PX) {
+          el.setAttribute('data-om-oversized', '');
+          // Fake-paged docs simulate sheets with over-tall break-after:page
+          // boxes; honoring the break spills half-blank pages and ends a
+          // colored box mid-sheet. Flow them, and (only when we own the page
+          // inset) drop the redundant padding/background via the rule below.
+          const cs = getComputedStyle(el);
+          if (cs.breakAfter === 'page' || cs.pageBreakAfter === 'always') {
+            el.setAttribute('data-om-fakepage', '');
+          }
+        }
+      }
+      const ost = document.createElement('style');
+      ost.textContent = '@media print{' +
+        '[data-om-oversized]{break-inside:auto !important;page-break-inside:auto !important}' +
+        '[data-om-fakepage]{break-after:auto !important;page-break-after:auto !important}' +
+        (pageInset ? '[data-om-fakepage]{padding:0 !important;background:none !important}' : '') +
+        '}';
+      document.head.appendChild(ost);
+    }
+  } catch (e) {}
+  // macOS Preview renders Skia-PDF Luminosity soft-masks as opaque grey boxes;
+  // swap the CSS that triggers them for Preview-safe forms.
+  try {
+    for (const el of document.body.querySelectorAll('*')) {
+      const cs = getComputedStyle(el);
+
+      if (cs.boxShadow !== 'none' && cs.filter === 'none') {
+        const outs = [], kept = [];
+        for (const s of cs.boxShadow.split(/,(?![^(]*[)])/)) {
+          const t = s.trim();
+          const m = t.match(/^(rgba?[(][^)]+[)]) (-?[0-9.]+px) (-?[0-9.]+px) ([0-9.]+px) -?[0-9.]+px$/);
+          if (m && parseFloat(m[4]) > 0) outs.push('drop-shadow(' + m[2] + ' ' + m[3] + ' ' + m[4] + ' ' + m[1] + ')');
+          else kept.push(t);
+        }
+        if (outs.length) {
+          el.style.setProperty('filter', outs.join(' '), 'important');
+          el.style.setProperty('box-shadow', kept.join(', ') || 'none', 'important');
+        }
+      }
+
+      const mask = cs.maskImage && cs.maskImage !== 'none' ? cs.maskImage : cs.webkitMaskImage;
+      if (mask && mask !== 'none' && cs.filter === 'none') el.style.setProperty('filter', 'opacity(1)', 'important');
+    }
+  } catch (e) {}
+  setTimeout(() => { try { window.print(); } catch (e) {} }, 200);
+})();
+</script>
+</body>
+</html>

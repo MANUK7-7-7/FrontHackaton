@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="./brand/icon-data.js"></script>
+<script src="./brand/icons.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  @keyframes disc-pulse { 0% { transform: scale(1); opacity: .55; } 70% { transform: scale(1.7); opacity: 0; } 100% { opacity: 0; } }
+  @keyframes disc-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+  @keyframes disc-bub { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+</style>
+</helmet>
+
+<div style="min-width:100%; min-height:100vh; width:max-content; box-sizing:border-box; padding:56px; background:#e7e5df; font-family:'Nunito',sans-serif;">
+
+  <div style="display:flex; align-items:flex-start; gap:48px;">
+
+    <!-- ============ FRAME 1 — MAPA DE SENDAS ============ -->
+    <div style="flex:none; display:flex; flex-direction:column; gap:16px; align-items:center;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; letter-spacing:.04em; color:#6f6a5e;">01 · Mapa de sendas</div>
+      <div style="width:422px; padding:13px; background:#16130d; border-radius:54px; box-shadow:0 34px 70px -22px rgba(40,30,10,.55);">
+        <div style="width:396px; height:812px; border-radius:42px; overflow:hidden; position:relative; background:#F5E0B7;">
+
+          <!-- status bar -->
+          <div style="height:50px; display:flex; align-items:center; justify-content:space-between; padding:0 32px 0 34px; color:#2E4756; font-family:'Fredoka',sans-serif; font-weight:600; font-size:15px;">
+            <span>9:41</span>
+            <span style="display:flex; gap:6px; align-items:center;">
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="#2E4756"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="4" width="3" height="8" rx="1"/><rect x="10" y="1.5" width="3" height="10.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+              <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><rect x="1" y="1" width="19" height="10" rx="3" stroke="#2E4756" stroke-width="1.5"/><rect x="3" y="3" width="14" height="6" rx="1.5" fill="#2E4756"/><rect x="21" y="4" width="2" height="4" rx="1" fill="#2E4756"/></svg>
+            </span>
+          </div>
+
+          <!-- top bar -->
+          <div style="padding:6px 18px 14px; display:flex; align-items:center; gap:10px;">
+            <div style="display:flex; align-items:center; gap:6px; background:#fff; border-radius:999px; padding:7px 13px; box-shadow:0 2px 0 #e0d4b6;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF5E00"><path d="M12 2c2 3 1 5 0 6.2 1.1.2 2.2-.8 2.4-2.7 2.1 1.9 3.6 4.3 3.6 7.5a6 6 0 1 1-12 0c0-2.1 1-3.6 2.2-4.7-.1 1.4.6 2.4 1.6 2.6C12.4 8.5 11.4 5.4 12 2z"/></svg>
+              <span style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:17px; color:#2E4756;">7</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:6px; background:#fff; border-radius:999px; padding:7px 13px; box-shadow:0 2px 0 #e0d4b6;">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="#00A6ED"><path d="M12 2l2.9 6.1 6.6.7-5 4.5 1.4 6.5L12 17.1 6.1 20.3l1.4-6.5-5-4.5 6.6-.7z"/></svg>
+              <span style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:17px; color:#2E4756;">1 240</span>
+            </div>
+            <div style="flex:1;"></div>
+            <div style="width:46px; height:46px; border-radius:15px; background:#ece6d6; border:2px dashed #b9b09a; display:flex; align-items:center; justify-content:center; font-family:'Nunito',sans-serif; font-weight:700; font-size:10px; color:#8a8273;">avatar</div>
+          </div>
+
+          <!-- unit banner -->
+          <div style="margin:0 18px 6px; background:#2E4756; border-radius:22px; padding:15px 16px; display:flex; align-items:center; gap:14px; box-shadow:0 4px 0 #1f3340;">
+            <div style="flex:1;">
+              <div style="font-family:'Nunito',sans-serif; font-weight:800; font-size:11px; letter-spacing:.12em; color:#8fd6f5;">UNIDAD 2</div>
+              <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:20px; color:#fff; line-height:1.1; margin-top:2px;">Ecuaciones lineales</div>
+            </div>
+            <div style="width:46px; height:46px; border-radius:14px; background:#00A6ED; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 0 #0077ad;">
+              <discere-icon name="Librito" size="26" hint-size="26px,26px" style="color:#fff; display:block;"></discere-icon>
+            </div>
+          </div>
+
+          <!-- PATH AREA -->
+          <div style="position:relative; height:520px; margin-top:2px;">
+            <!-- faint decorative brand icons -->
+            <discere-icon name="Group10" size="120" hint-size="120px,120px" style="color:#2E4756; opacity:.06; position:absolute; left:-14px; top:120px; transform:rotate(-12deg);"></discere-icon>
+            <discere-icon name="Group13" size="120" hint-size="120px,120px" style="color:#2E4756; opacity:.06; position:absolute; right:-10px; top:300px; transform:rotate(10deg);"></discere-icon>
+            <discere-icon name="Gorrito" size="120" hint-size="120px,120px" style="color:#2E4756; opacity:.06; position:absolute; right:18px; top:30px; transform:rotate(8deg);"></discere-icon>
+
+            <!-- connecting path -->
+            <svg width="396" height="520" viewBox="0 0 396 520" fill="none" style="position:absolute; left:0; top:0;">
+              <path d="M198 56 C150 96 108 110 108 150 C108 196 256 206 256 252" stroke="#00A6ED" stroke-width="9" stroke-linecap="round"/>
+              <path d="M256 252 C256 300 112 312 112 356 C112 404 262 410 262 452" stroke="#2E4756" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 20" opacity="0.32"/>
+            </svg>
+
+            <!-- node 1 completed -->
+            <div style="position:absolute; left:160px; top:18px; width:76px; height:76px;">
+              <div style="width:76px; height:76px; border-radius:50%; background:#00A6ED; box-shadow:0 6px 0 #0077ad; display:flex; align-items:center; justify-content:center;">
+                <discere-icon name="Vector" size="34" hint-size="34px,34px" style="color:#fff; display:block;"></discere-icon>
+              </div>
+              <div style="position:absolute; right:-4px; top:-4px; width:26px; height:26px; border-radius:50%; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.18); display:flex; align-items:center; justify-content:center;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#00A6ED" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+
+            <!-- node 2 completed -->
+            <div style="position:absolute; left:70px; top:112px; width:76px; height:76px;">
+              <div style="width:76px; height:76px; border-radius:50%; background:#00A6ED; box-shadow:0 6px 0 #0077ad; display:flex; align-items:center; justify-content:center;">
+                <discere-icon name="Librito" size="34" hint-size="34px,34px" style="color:#fff; display:block;"></discere-icon>
+              </div>
+              <div style="position:absolute; right:-4px; top:-4px; width:26px; height:26px; border-radius:50%; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.18); display:flex; align-items:center; justify-content:center;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#00A6ED" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+
+            <!-- node 3 CURRENT -->
+            <div style="position:absolute; left:210px; top:206px; width:92px; height:92px;">
+              <div style="position:absolute; left:0; top:0; width:92px; height:92px; border-radius:50%; background:#FF5E00; animation:disc-pulse 2.1s ease-out infinite;"></div>
+              <!-- start bubble -->
+              <div style="position:absolute; left:50%; top:-46px; transform:translateX(-50%); background:#fff; padding:7px 16px; border-radius:14px; box-shadow:0 4px 0 #e0d4b6; font-family:'Fredoka',sans-serif; font-weight:600; font-size:13px; letter-spacing:.04em; color:#FF5E00; white-space:nowrap; animation:disc-bub 2s ease-in-out infinite;">
+                EMPEZAR
+                <span style="position:absolute; left:50%; bottom:-7px; transform:translateX(-50%); width:0; height:0; border-left:7px solid transparent; border-right:7px solid transparent; border-top:8px solid #fff;"></span>
+              </div>
+              <div style="position:relative; width:92px; height:92px; border-radius:50%; background:#FF5E00; box-shadow:0 7px 0 #c44600; display:flex; align-items:center; justify-content:center;">
+                <discere-icon name="Group13" size="44" hint-size="44px,44px" style="color:#fff; display:block;"></discere-icon>
+              </div>
+            </div>
+
+            <!-- node 4 locked -->
+            <div style="position:absolute; left:74px; top:318px; width:76px; height:76px;">
+              <div style="width:76px; height:76px; border-radius:50%; background:#e6e0d0; box-shadow:0 6px 0 #cdc6b3; display:flex; align-items:center; justify-content:center;">
+                <discere-icon name="Group10" size="36" hint-size="36px,36px" style="color:#b3ab95; display:block;"></discere-icon>
+              </div>
+              <div style="position:absolute; right:-2px; bottom:6px; width:24px; height:24px; border-radius:50%; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.14); display:flex; align-items:center; justify-content:center;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 11V8a6 6 0 0 1 12 0v3" stroke="#b3ab95" stroke-width="2.4" stroke-linecap="round"/><rect x="4.5" y="11" width="15" height="9" rx="2.5" fill="#b3ab95"/></svg>
+              </div>
+            </div>
+
+            <!-- node 5 locked (boss/cap) -->
+            <div style="position:absolute; left:224px; top:414px; width:76px; height:76px;">
+              <div style="width:76px; height:76px; border-radius:50%; background:#e6e0d0; box-shadow:0 6px 0 #cdc6b3; display:flex; align-items:center; justify-content:center;">
+                <discere-icon name="Gorrito" size="40" hint-size="40px,40px" style="color:#b3ab95; display:block;"></discere-icon>
+              </div>
+              <div style="position:absolute; right:-2px; bottom:6px; width:24px; height:24px; border-radius:50%; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.14); display:flex; align-items:center; justify-content:center;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 11V8a6 6 0 0 1 12 0v3" stroke="#b3ab95" stroke-width="2.4" stroke-linecap="round"/><rect x="4.5" y="11" width="15" height="9" rx="2.5" fill="#b3ab95"/></svg>
+              </div>
+            </div>
+
+            <!-- companion tip -->
+            <div style="position:absolute; left:18px; bottom:6px; right:18px; display:flex; align-items:center; gap:11px; background:#fff; border-radius:18px; padding:11px 13px; box-shadow:0 4px 14px rgba(40,30,10,.12);">
+              <div style="width:42px; height:42px; border-radius:50%; background:#F5E0B7; flex:none; display:flex; align-items:center; justify-content:center; animation:disc-bob 3s ease-in-out infinite;">
+                <discere-icon name="Group4" size="30" hint-size="30px,30px" style="display:block;"></discere-icon>
+              </div>
+              <div style="font-family:'Nunito',sans-serif; font-size:13px; font-weight:600; color:#2E4756; line-height:1.3;">Detecté que las <b>fracciones</b> te cuestan. Calibré esta senda para vos.</div>
+            </div>
+          </div>
+
+          <!-- bottom nav -->
+          <div style="position:absolute; left:0; bottom:0; width:100%; height:78px; background:#fff; border-top:1px solid #eadfc4; display:flex; align-items:center; justify-content:space-around; padding-bottom:6px;">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:3px; color:#FF5E00;">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7" stroke="#FF5E00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9.5V20h14V9.5" stroke="#FF5E00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span style="font-family:'Nunito',sans-serif; font-weight:800; font-size:11px;">Aprender</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:3px;">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M7 4h10v4a5 5 0 0 1-10 0z" stroke="#a39a83" stroke-width="2.2" stroke-linejoin="round"/><path d="M7 5H4.5a2.5 2.5 0 0 0 3.5 4M17 5h2.5a2.5 2.5 0 0 1-3.5 4M9.5 14h5v3.5h-5zM8 20h8" stroke="#a39a83" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span style="font-family:'Nunito',sans-serif; font-weight:700; font-size:11px; color:#a39a83;">Liga</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:3px;">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="6" stroke="#a39a83" stroke-width="2.2"/><path d="M8.5 14l-1 7 4.5-2.6 4.5 2.6-1-7" stroke="#a39a83" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span style="font-family:'Nunito',sans-serif; font-weight:700; font-size:11px; color:#a39a83;">Insignias</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:3px;">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#a39a83" stroke-width="2.2"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" stroke="#a39a83" stroke-width="2.2" stroke-linecap="round"/></svg>
+              <span style="font-family:'Nunito',sans-serif; font-weight:700; font-size:11px; color:#a39a83;">Perfil</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FRAME 2 — LECCIÓN + FEEDBACK IA ============ -->
+    <div style="flex:none; display:flex; flex-direction:column; gap:16px; align-items:center;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; letter-spacing:.04em; color:#6f6a5e;">02 · Lección · feedback de IA</div>
+      <div style="width:422px; padding:13px; background:#16130d; border-radius:54px; box-shadow:0 34px 70px -22px rgba(40,30,10,.55);">
+        <div style="width:396px; height:812px; border-radius:42px; overflow:hidden; position:relative; background:#ffffff;">
+
+          <!-- status bar -->
+          <div style="height:50px; display:flex; align-items:center; justify-content:space-between; padding:0 32px 0 34px; color:#2E4756; font-family:'Fredoka',sans-serif; font-weight:600; font-size:15px;">
+            <span>9:41</span>
+            <span style="display:flex; gap:6px; align-items:center;">
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="#2E4756"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="4" width="3" height="8" rx="1"/><rect x="10" y="1.5" width="3" height="10.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+              <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><rect x="1" y="1" width="19" height="10" rx="3" stroke="#2E4756" stroke-width="1.5"/><rect x="3" y="3" width="14" height="6" rx="1.5" fill="#2E4756"/><rect x="21" y="4" width="2" height="4" rx="1" fill="#2E4756"/></svg>
+            </span>
+          </div>
+
+          <!-- lesson top: close + progress + hearts -->
+          <div style="padding:8px 20px 4px; display:flex; align-items:center; gap:14px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#b9b09a" stroke-width="3" stroke-linecap="round"/></svg>
+            <div style="flex:1; height:14px; border-radius:999px; background:#ece6d6; display:flex; gap:4px; padding:0; overflow:hidden;">
+              <div style="width:62%; height:100%; border-radius:999px; background:#00A6ED;"></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:5px;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#E54B4B"><path d="M12 21s-7-4.4-9.4-8.3C.8 9.6 2.8 5.5 6.6 5.5c2.3 0 3.8 1.6 5.4 3.4 1.6-1.8 3.1-3.4 5.4-3.4 3.8 0 5.8 4.1 4 7.2C19 16.6 12 21 12 21z"/></svg>
+              <span style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:17px; color:#2E4756;">4</span>
+            </div>
+          </div>
+
+          <!-- prompt -->
+          <div style="padding:22px 26px 0;">
+            <div style="font-family:'Nunito',sans-serif; font-weight:800; font-size:13px; letter-spacing:.1em; color:#00A6ED;">RESOLVÉ PARA X</div>
+            <div style="margin-top:18px; background:#F5E0B7; border-radius:22px; padding:30px 20px; text-align:center;">
+              <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:46px; color:#2E4756; letter-spacing:-.01em;">2x + 6 = 14</div>
+            </div>
+          </div>
+
+          <!-- options grid -->
+          <div style="padding:20px 26px 0; display:grid; grid-template-columns:1fr 1fr; gap:13px;">
+            <!-- correct -->
+            <div style="position:relative; min-height:70px; border-radius:18px; border:2.5px solid #3FB97A; background:#EAF7F0; display:flex; align-items:center; justify-content:center; font-family:'Fredoka',sans-serif; font-weight:600; font-size:26px; color:#2E4756;">
+              x = 4
+              <div style="position:absolute; right:9px; top:9px; width:22px; height:22px; border-radius:50%; background:#3FB97A; display:flex; align-items:center; justify-content:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <!-- chosen wrong -->
+            <div style="position:relative; min-height:70px; border-radius:18px; border:2.5px solid #E54B4B; background:#FCEBEA; display:flex; align-items:center; justify-content:center; font-family:'Fredoka',sans-serif; font-weight:600; font-size:26px; color:#2E4756;">
+              x = 7
+              <div style="position:absolute; right:9px; top:9px; width:22px; height:22px; border-radius:50%; background:#E54B4B; display:flex; align-items:center; justify-content:center;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg></div>
+            </div>
+            <div style="min-height:70px; border-radius:18px; border:2px solid #e8e2d4; background:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fredoka',sans-serif; font-weight:600; font-size:26px; color:#b3ab95;">x = 10</div>
+            <div style="min-height:70px; border-radius:18px; border:2px solid #e8e2d4; background:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fredoka',sans-serif; font-weight:600; font-size:26px; color:#b3ab95;">x = 3</div>
+          </div>
+
+          <!-- AI feedback sheet -->
+          <div style="position:absolute; left:0; bottom:0; width:100%; background:#FCEBEA; border-radius:30px 30px 42px 42px; padding:22px 24px 30px; box-shadow:0 -10px 30px rgba(40,30,10,.08);">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:30px; height:30px; border-radius:50%; background:#E54B4B; display:flex; align-items:center; justify-content:center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg></div>
+              <span style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:20px; color:#C23B3B;">Te trabaste al despejar</span>
+            </div>
+            <div style="margin-top:13px; display:flex; gap:11px; align-items:flex-start;">
+              <div style="width:40px; height:40px; border-radius:50%; background:#fff; flex:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,.08);">
+                <discere-icon name="Group4" size="28" hint-size="28px,28px" style="display:block;"></discere-icon>
+              </div>
+              <div style="font-family:'Nunito',sans-serif; font-size:14.5px; font-weight:600; color:#5a4843; line-height:1.4;">Restaste el 6 de un solo lado. Lo que hacés de un lado, también va del otro: <b style="color:#2E4756;">14 − 6 = 8</b>, y luego <b style="color:#2E4756;">8 ÷ 2 = 4</b>.</div>
+            </div>
+            <div style="margin-top:14px; display:inline-flex; align-items:center; gap:7px; background:#fff; border-radius:999px; padding:7px 13px;">
+              <div style="width:18px; height:18px; border-radius:50%; background:#00A6ED; display:flex; align-items:center; justify-content:center;"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
+              <span style="font-family:'Nunito',sans-serif; font-weight:700; font-size:12.5px; color:#2E4756;">Tu próximo ejercicio se ajustó a este error</span>
+            </div>
+            <div style="margin-top:16px; background:#E54B4B; border-radius:18px; padding:16px; text-align:center; box-shadow:0 5px 0 #b83636; font-family:'Fredoka',sans-serif; font-weight:600; font-size:18px; letter-spacing:.06em; color:#fff;">ENTENDIDO</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FRAME 3 — RECOMPENSA ============ -->
+    <div style="flex:none; display:flex; flex-direction:column; gap:16px; align-items:center;">
+      <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; letter-spacing:.04em; color:#6f6a5e;">03 · Recompensa · XP + racha</div>
+      <div style="width:422px; padding:13px; background:#16130d; border-radius:54px; box-shadow:0 34px 70px -22px rgba(40,30,10,.55);">
+        <div style="width:396px; height:812px; border-radius:42px; overflow:hidden; position:relative; background:#2E4756;">
+
+          <!-- confetti -->
+          <div style="position:absolute; left:40px; top:90px; width:12px; height:12px; border-radius:3px; background:#00A6ED; transform:rotate(20deg);"></div>
+          <div style="position:absolute; left:120px; top:60px; width:9px; height:9px; border-radius:50%; background:#FF5E00;"></div>
+          <div style="position:absolute; left:300px; top:80px; width:13px; height:13px; border-radius:3px; background:#F5E0B7; transform:rotate(-15deg);"></div>
+          <div style="position:absolute; left:340px; top:150px; width:8px; height:8px; border-radius:50%; background:#00A6ED;"></div>
+          <div style="position:absolute; left:60px; top:170px; width:10px; height:10px; border-radius:2px; background:#FF5E00; transform:rotate(30deg);"></div>
+          <div style="position:absolute; left:250px; top:50px; width:8px; height:8px; border-radius:50%; background:#fff;"></div>
+          <div style="position:absolute; left:30px; top:240px; width:9px; height:9px; border-radius:50%; background:#F5E0B7;"></div>
+          <div style="position:absolute; left:355px; top:230px; width:11px; height:11px; border-radius:3px; background:#FF5E00; transform:rotate(15deg);"></div>
+          <div style="position:absolute; left:180px; top:44px; width:10px; height:10px; border-radius:2px; background:#00A6ED; transform:rotate(40deg);"></div>
+
+          <!-- status bar -->
+          <div style="height:50px; display:flex; align-items:center; justify-content:space-between; padding:0 32px 0 34px; color:#fff; font-family:'Fredoka',sans-serif; font-weight:600; font-size:15px; position:relative;">
+            <span>9:41</span>
+            <span style="display:flex; gap:6px; align-items:center;">
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="#fff"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="4" width="3" height="8" rx="1"/><rect x="10" y="1.5" width="3" height="10.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+              <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><rect x="1" y="1" width="19" height="10" rx="3" stroke="#fff" stroke-width="1.5"/><rect x="3" y="3" width="14" height="6" rx="1.5" fill="#fff"/><rect x="21" y="4" width="2" height="4" rx="1" fill="#fff"/></svg>
+            </span>
+          </div>
+
+          <!-- celebration head -->
+          <div style="padding:28px 30px 0; text-align:center; position:relative;">
+            <div style="width:108px; height:108px; border-radius:50%; background:#F5E0B7; margin:0 auto; display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 10px rgba(245,224,183,.18); animation:disc-bob 3s ease-in-out infinite;">
+              <discere-icon name="Group4" size="74" hint-size="74px,74px" style="display:block;"></discere-icon>
+            </div>
+            <div style="font-family:'Fredoka',sans-serif; font-weight:700; font-size:30px; color:#fff; margin-top:20px; line-height:1.05;">¡Lección completada!</div>
+            <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; color:#8fd6f5; margin-top:6px;">Ecuaciones lineales · Unidad 2</div>
+          </div>
+
+          <!-- reward cards -->
+          <div style="padding:26px 24px 0; display:flex; gap:11px;">
+            <div style="flex:1; background:#00A6ED; border-radius:20px; padding:15px 8px; text-align:center; box-shadow:0 5px 0 #0077ad;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" style="margin-bottom:2px;"><path d="M12 2l2.9 6.1 6.6.7-5 4.5 1.4 6.5L12 17.1 6.1 20.3l1.4-6.5-5-4.5 6.6-.7z"/></svg>
+              <div style="font-family:'Fredoka',sans-serif; font-weight:700; font-size:26px; color:#fff; line-height:1;">+30</div>
+              <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:11px; color:#d6f0fb; margin-top:3px;">XP ganada</div>
+            </div>
+            <div style="flex:1; background:#FF5E00; border-radius:20px; padding:15px 8px; text-align:center; box-shadow:0 5px 0 #c44600;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" style="margin-bottom:2px;"><path d="M12 2c2 3 1 5 0 6.2 1.1.2 2.2-.8 2.4-2.7 2.1 1.9 3.6 4.3 3.6 7.5a6 6 0 1 1-12 0c0-2.1 1-3.6 2.2-4.7-.1 1.4.6 2.4 1.6 2.6C12.4 8.5 11.4 5.4 12 2z"/></svg>
+              <div style="font-family:'Fredoka',sans-serif; font-weight:700; font-size:26px; color:#fff; line-height:1;">8</div>
+              <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:11px; color:#ffe0cf; margin-top:3px;">Días de racha</div>
+            </div>
+            <div style="flex:1; background:#F5E0B7; border-radius:20px; padding:15px 8px; text-align:center; box-shadow:0 5px 0 #d8c192;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="margin-bottom:2px;"><circle cx="12" cy="12" r="9" stroke="#2E4756" stroke-width="2.2"/><circle cx="12" cy="12" r="4.5" stroke="#2E4756" stroke-width="2.2"/><circle cx="12" cy="12" r="1.4" fill="#2E4756"/></svg>
+              <div style="font-family:'Fredoka',sans-serif; font-weight:700; font-size:26px; color:#2E4756; line-height:1;">90%</div>
+              <div style="font-family:'Nunito',sans-serif; font-weight:700; font-size:11px; color:#7c7156; margin-top:3px;">Precisión</div>
+            </div>
+          </div>
+
+          <!-- level progress -->
+          <div style="margin:22px 24px 0; background:#33506180; border:1px solid #45637380; border-radius:22px; padding:17px 18px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; font-family:'Fredoka',sans-serif; font-weight:600; font-size:14px;">
+              <span style="color:#fff;">Nivel 5</span>
+              <span style="color:#8fd6f5;">Nivel 6</span>
+            </div>
+            <div style="margin-top:10px; height:16px; border-radius:999px; background:#26414f; overflow:hidden;">
+              <div style="width:74%; height:100%; border-radius:999px; background:linear-gradient(90deg,#00A6ED,#5ec8f6);"></div>
+            </div>
+            <div style="margin-top:8px; text-align:center; font-family:'Nunito',sans-serif; font-weight:700; font-size:12px; color:#bcd3df;">740 / 1000 XP · faltan 260 para subir</div>
+          </div>
+
+          <!-- continue -->
+          <div style="position:absolute; left:24px; right:24px; bottom:34px;">
+            <div style="background:#FF5E00; border-radius:20px; padding:18px; text-align:center; box-shadow:0 6px 0 #c44600; font-family:'Fredoka',sans-serif; font-weight:600; font-size:20px; letter-spacing:.06em; color:#fff;">CONTINUAR</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1500,&quot;height&quot;:1020}}"></script>
+</body>
+</html>
